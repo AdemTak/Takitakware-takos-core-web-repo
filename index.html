@@ -46,13 +46,51 @@
             color: #8b949e; 
             margin-bottom: 25px; 
         }
-        .badge { 
-            background-color: #238636; 
-            color: white; 
-            padding: 3px 6px; 
+        .badge-beta { 
+            background-color: #d29922; 
+            color: #f0f6fc; 
+            padding: 3px 8px; 
             border-radius: 4px; 
-            font-size: 11px; 
+            font-size: 12px; 
             font-weight: bold; 
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        .feature-box { 
+            background: #21262d; 
+            border-left: 4px solid #58a6ff; 
+            padding: 15px; 
+            border-radius: 0 8px 8px 0; 
+            margin-bottom: 25px; 
+            font-size: 14px; 
+        }
+        .feedback-box {
+            background: rgba(210, 153, 34, 0.1);
+            border: 1px solid #d29922;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .feedback-box h3 {
+            margin-top: 0;
+            color: #d29922;
+        }
+        .comment-btn {
+            display: inline-block;
+            background-color: #21262d;
+            color: #58a6ff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid #30363d;
+            margin-top: 10px;
+        }
+        .comment-btn:hover {
+            background-color: #30363d;
+            color: #79c0ff;
         }
         .download-btn { 
             display: inline-block; 
@@ -107,28 +145,37 @@
     | |/ ___ \| . \| |_| | ___) | |__| |_| |  _ <| |___ 
     |_/_/   \_\_|\_\\____/|____/ \____\___/|_| \_\_____|
     </div>
-    <h1>takOS core <span class="badge">v1.0 Stable Release</span></h1>
+    <h1>takOS core <span class="badge-beta">BETA TEST</span></h1>
     <div class="meta">Distributed by <strong>Takitakware</strong> | Kernel Base Architecture by FreeBSD (Copyright <strong>Taktronic</strong>)</div>
     
-    <p>Official minimal operating system optimized for the 64-bit ARM Broadcom processor of the <strong>Raspberry Pi 5</strong>.</p>
-    
-    <!-- Ersetze später 'xyz' und 'abc' mit deinen echten Werten aus deinem Dropbox-Link, der am Ende auf dl=1 steht -->
+    <div class="feature-box">
+        <strong>System Architecture:</strong> Fully optimized for the 64-bit ARM Broadcom BCM2712 processor powering the <strong>Raspberry Pi 5</strong>.
+    </div>
+
+    <!-- 🌟 NEUER FEEDBACKBEREICH FÜR DIE COMMUNITY -->
+    <div class="feedback-box">
+        <h3>📢 Community Testing & Feedback Required!</h3>
+        <p>This is an official beta release of takOS core. We need your help to improve the operating system! Please download the image, test the features, and leave a comment in our repository repository with your feedback on whether it works great or needs changes.</p>
+        <a href="https://github.com" target="_blank" class="comment-btn">💬 Write a Comment / Review</a>
+    </div>
+
+    <!-- Füge hier deinen Dropbox-Link mit dl=1 ein -->
     <a href="https://dropbox.com" class="download-btn">
-        📥 Download takOS core Image (3.15 GB)
+        📥 Download takOS core Beta Image (3.15 GB)
     </a>
 
     <div class="app-list">
         <h3>📦 Available App Extensions (Install via taks Package Manager):</h3>
         <p>Run these commands inside your takOS core terminal to pull the binaries directly from the official Takitakware repository:</p>
         
-        <p><strong>1. Interactive File Manager</strong></p>
-        <code>taks install https://github.io</code>
+        <p><strong>1. Micro Text Editor</strong></p>
+        <code>taks install [HIER_DEIN_DROPBOX_LINK_FÜR_EDIT]</code>
         
-        <p><strong>2. Micro Text Editor</strong></p>
-        <code>taks install https://github.io</code>
-        
-        <p><strong>3. Performance & Hardware Monitor</strong></p>
-        <code>taks install https://github.io</code>
+        <p><strong>2. Performance & Hardware Monitor</strong></p>
+        <code>taks install [HIER_DEIN_DROPBOX_LINK_FÜR_TOP]</code>
+
+        <p><strong>3. Advanced Network Utility</strong></p>
+        <code>taks install [HIER_DEIN_DROPBOX_LINK_FÜR_NET]</code>
     </div>
 
     <div class="footer">
