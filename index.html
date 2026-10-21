@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>takOS core Release Portal | Takitakware</title>
+    <style>
+        body { 
+            background-color: #0d1117; 
+            color: #c9d1d9; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
+        .container { 
+            max-width: 750px; 
+            width: 100%; 
+            background: #161b22; 
+            border: 1px solid #30363d; 
+            border-radius: 12px; 
+            padding: 40px; 
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5); 
+        }
+        .ascii { 
+            font-family: monospace; 
+            white-space: pre; 
+            color: #58a6ff; 
+            font-size: 8px; 
+            line-height: 1.2; 
+            margin-bottom: 25px; 
+            overflow-x: auto;
+        }
+        h1 { 
+            color: #f0f6fc; 
+            font-size: 26px; 
+            border-bottom: 1px solid #21262d; 
+            padding-bottom: 10px; 
+            margin-bottom: 5px;
+        }
+        .meta { 
+            font-size: 13px; 
+            color: #8b949e; 
+            margin-bottom: 25px; 
+        }
+        .badge { 
+            background-color: #238636; 
+            color: white; 
+            padding: 3px 6px; 
+            border-radius: 4px; 
+            font-size: 11px; 
+            font-weight: bold; 
+        }
+        .download-btn { 
+            display: inline-block; 
+            background-color: #238636; 
+            color: white; 
+            text-decoration: none; 
+            padding: 14px 22px; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            margin-top: 15px; 
+            border: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+        .download-btn:hover { 
+            background-color: #2ea043; 
+        }
+        .app-list { 
+            background: #21262d; 
+            padding: 20px; 
+            border-radius: 8px; 
+            border: 1px solid #30363d; 
+            margin-top: 25px; 
+        }
+        code { 
+            background: #0d1117; 
+            color: #ff7b72; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-family: monospace; 
+            font-size: 13px; 
+            display: block; 
+            margin: 5px 0 15px 0; 
+            overflow-x: auto;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #8b949e;
+            text-align: center;
+            border-top: 1px solid #21262d;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="ascii">
+ _______ _    _  ____   ____   ____ ___  ____  _____ 
+
+    | |  / \  | |/ /  _ \ / ___| / ___/ _ \|  _ \| ____|
+    | | / _ \ | ' /| | | |\___ \| |  | | | | |_) |  _|  
+    | |/ ___ \| . \| |_| | ___) | |__| |_| |  _ <| |___ 
+    |_/_/   \_\_|\_\\____/|____/ \____\___/|_| \_\_____|
+    </div>
+    <h1>takOS core <span class="badge">v1.0 Stable Release</span></h1>
+    <div class="meta">Distributed by <strong>Takitakware</strong> | Kernel Base Architecture by FreeBSD (Copyright <strong>Taktronic</strong>)</div>
+    
+    <p>Official minimal operating system optimized for the 64-bit ARM Broadcom processor of the <strong>Raspberry Pi 5</strong>.</p>
+    
+    <!-- Ersetze später 'xyz' und 'abc' mit deinen echten Werten aus deinem Dropbox-Link, der am Ende auf dl=1 steht -->
+    <a href="https://dropbox.com" class="download-btn">
+        📥 Download takOS core Image (3.15 GB)
+    </a>
+
+    <div class="app-list">
+        <h3>📦 Available App Extensions (Install via taks Package Manager):</h3>
+        <p>Run these commands inside your takOS core terminal to pull the binaries directly from the official Takitakware repository:</p>
+        
+        <p><strong>1. Interactive File Manager</strong></p>
+        <code>taks install https://github.io</code>
+        
+        <p><strong>2. Micro Text Editor</strong></p>
+        <code>taks install https://github.io</code>
+        
+        <p><strong>3. Performance & Hardware Monitor</strong></p>
+        <code>taks install https://github.io</code>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Takitakware. All rights reserved. Kernel Copyright by Taktronic.
+    </div>
+</div>
+</body>
+</html>
